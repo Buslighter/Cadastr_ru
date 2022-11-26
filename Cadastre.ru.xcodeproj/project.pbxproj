@@ -1,0 +1,640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1588450E29254A2F00A9C5A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1588450D29254A2F00A9C5A0 /* AppDelegate.swift */; };
+		1588451029254A2F00A9C5A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1588450F29254A2F00A9C5A0 /* SceneDelegate.swift */; };
+		1588451229254A2F00A9C5A0 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1588451129254A2F00A9C5A0 /* NewsViewController.swift */; };
+		1588451529254A3000A9C5A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1588451329254A3000A9C5A0 /* Main.storyboard */; };
+		1588451829254A3000A9C5A0 /* Cadastre_ru.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1588451629254A3000A9C5A0 /* Cadastre_ru.xcdatamodeld */; };
+		1588451A29254A3500A9C5A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1588451929254A3500A9C5A0 /* Assets.xcassets */; };
+		1588451D29254A3500A9C5A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1588451B29254A3500A9C5A0 /* LaunchScreen.storyboard */; };
+		1588452829254A3600A9C5A0 /* Cadastre_ruTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1588452729254A3600A9C5A0 /* Cadastre_ruTests.swift */; };
+		1588453229254A3600A9C5A0 /* Cadastre_ruUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1588453129254A3600A9C5A0 /* Cadastre_ruUITests.swift */; };
+		1588453429254A3600A9C5A0 /* Cadastre_ruUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1588453329254A3600A9C5A0 /* Cadastre_ruUITestsLaunchTests.swift */; };
+		1588454129254A5300A9C5A0 /* APIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1588454029254A5300A9C5A0 /* APIModel.swift */; };
+		1588454329254A5E00A9C5A0 /* APIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1588454229254A5E00A9C5A0 /* APIViewModel.swift */; };
+		158845452928D8B800A9C5A0 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158845442928D8B800A9C5A0 /* NewsTableViewCell.swift */; };
+		158845472928DCA900A9C5A0 /* NewsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158845462928DCA900A9C5A0 /* NewsTableView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1588452429254A3600A9C5A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1588450229254A2F00A9C5A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1588450929254A2F00A9C5A0;
+			remoteInfo = Cadastre.ru;
+		};
+		1588452E29254A3600A9C5A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1588450229254A2F00A9C5A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1588450929254A2F00A9C5A0;
+			remoteInfo = Cadastre.ru;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1588450A29254A2F00A9C5A0 /* Cadastre.ru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cadastre.ru.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1588450D29254A2F00A9C5A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1588450F29254A2F00A9C5A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1588451129254A2F00A9C5A0 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		1588451429254A3000A9C5A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1588451729254A3000A9C5A0 /* Cadastre_ru.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cadastre_ru.xcdatamodel; sourceTree = "<group>"; };
+		1588451929254A3500A9C5A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1588451C29254A3500A9C5A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1588451E29254A3500A9C5A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1588452329254A3600A9C5A0 /* Cadastre.ruTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Cadastre.ruTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1588452729254A3600A9C5A0 /* Cadastre_ruTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cadastre_ruTests.swift; sourceTree = "<group>"; };
+		1588452D29254A3600A9C5A0 /* Cadastre.ruUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Cadastre.ruUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1588453129254A3600A9C5A0 /* Cadastre_ruUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cadastre_ruUITests.swift; sourceTree = "<group>"; };
+		1588453329254A3600A9C5A0 /* Cadastre_ruUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cadastre_ruUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1588454029254A5300A9C5A0 /* APIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIModel.swift; sourceTree = "<group>"; };
+		1588454229254A5E00A9C5A0 /* APIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIViewModel.swift; sourceTree = "<group>"; };
+		158845442928D8B800A9C5A0 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		158845462928DCA900A9C5A0 /* NewsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1588450729254A2F00A9C5A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1588452029254A3600A9C5A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1588452A29254A3600A9C5A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1588450129254A2F00A9C5A0 = {
+			isa = PBXGroup;
+			children = (
+				1588450C29254A2F00A9C5A0 /* Cadastre.ru */,
+				1588452629254A3600A9C5A0 /* Cadastre.ruTests */,
+				1588453029254A3600A9C5A0 /* Cadastre.ruUITests */,
+				1588450B29254A2F00A9C5A0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1588450B29254A2F00A9C5A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1588450A29254A2F00A9C5A0 /* Cadastre.ru.app */,
+				1588452329254A3600A9C5A0 /* Cadastre.ruTests.xctest */,
+				1588452D29254A3600A9C5A0 /* Cadastre.ruUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1588450C29254A2F00A9C5A0 /* Cadastre.ru */ = {
+			isa = PBXGroup;
+			children = (
+				1588450D29254A2F00A9C5A0 /* AppDelegate.swift */,
+				1588450F29254A2F00A9C5A0 /* SceneDelegate.swift */,
+				1588451129254A2F00A9C5A0 /* NewsViewController.swift */,
+				1588454029254A5300A9C5A0 /* APIModel.swift */,
+				1588454229254A5E00A9C5A0 /* APIViewModel.swift */,
+				1588451329254A3000A9C5A0 /* Main.storyboard */,
+				158845462928DCA900A9C5A0 /* NewsTableView.swift */,
+				158845442928D8B800A9C5A0 /* NewsTableViewCell.swift */,
+				1588451929254A3500A9C5A0 /* Assets.xcassets */,
+				1588451B29254A3500A9C5A0 /* LaunchScreen.storyboard */,
+				1588451E29254A3500A9C5A0 /* Info.plist */,
+				1588451629254A3000A9C5A0 /* Cadastre_ru.xcdatamodeld */,
+			);
+			path = Cadastre.ru;
+			sourceTree = "<group>";
+		};
+		1588452629254A3600A9C5A0 /* Cadastre.ruTests */ = {
+			isa = PBXGroup;
+			children = (
+				1588452729254A3600A9C5A0 /* Cadastre_ruTests.swift */,
+			);
+			path = Cadastre.ruTests;
+			sourceTree = "<group>";
+		};
+		1588453029254A3600A9C5A0 /* Cadastre.ruUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1588453129254A3600A9C5A0 /* Cadastre_ruUITests.swift */,
+				1588453329254A3600A9C5A0 /* Cadastre_ruUITestsLaunchTests.swift */,
+			);
+			path = Cadastre.ruUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1588450929254A2F00A9C5A0 /* Cadastre.ru */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1588453729254A3600A9C5A0 /* Build configuration list for PBXNativeTarget "Cadastre.ru" */;
+			buildPhases = (
+				1588450629254A2F00A9C5A0 /* Sources */,
+				1588450729254A2F00A9C5A0 /* Frameworks */,
+				1588450829254A2F00A9C5A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cadastre.ru;
+			productName = Cadastre.ru;
+			productReference = 1588450A29254A2F00A9C5A0 /* Cadastre.ru.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1588452229254A3600A9C5A0 /* Cadastre.ruTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1588453A29254A3600A9C5A0 /* Build configuration list for PBXNativeTarget "Cadastre.ruTests" */;
+			buildPhases = (
+				1588451F29254A3600A9C5A0 /* Sources */,
+				1588452029254A3600A9C5A0 /* Frameworks */,
+				1588452129254A3600A9C5A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1588452529254A3600A9C5A0 /* PBXTargetDependency */,
+			);
+			name = Cadastre.ruTests;
+			productName = Cadastre.ruTests;
+			productReference = 1588452329254A3600A9C5A0 /* Cadastre.ruTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1588452C29254A3600A9C5A0 /* Cadastre.ruUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1588453D29254A3600A9C5A0 /* Build configuration list for PBXNativeTarget "Cadastre.ruUITests" */;
+			buildPhases = (
+				1588452929254A3600A9C5A0 /* Sources */,
+				1588452A29254A3600A9C5A0 /* Frameworks */,
+				1588452B29254A3600A9C5A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1588452F29254A3600A9C5A0 /* PBXTargetDependency */,
+			);
+			name = Cadastre.ruUITests;
+			productName = Cadastre.ruUITests;
+			productReference = 1588452D29254A3600A9C5A0 /* Cadastre.ruUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1588450229254A2F00A9C5A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					1588450929254A2F00A9C5A0 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					1588452229254A3600A9C5A0 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 1588450929254A2F00A9C5A0;
+					};
+					1588452C29254A3600A9C5A0 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 1588450929254A2F00A9C5A0;
+					};
+				};
+			};
+			buildConfigurationList = 1588450529254A2F00A9C5A0 /* Build configuration list for PBXProject "Cadastre.ru" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1588450129254A2F00A9C5A0;
+			productRefGroup = 1588450B29254A2F00A9C5A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1588450929254A2F00A9C5A0 /* Cadastre.ru */,
+				1588452229254A3600A9C5A0 /* Cadastre.ruTests */,
+				1588452C29254A3600A9C5A0 /* Cadastre.ruUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1588450829254A2F00A9C5A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1588451D29254A3500A9C5A0 /* LaunchScreen.storyboard in Resources */,
+				1588451A29254A3500A9C5A0 /* Assets.xcassets in Resources */,
+				1588451529254A3000A9C5A0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1588452129254A3600A9C5A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1588452B29254A3600A9C5A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1588450629254A2F00A9C5A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1588451229254A2F00A9C5A0 /* NewsViewController.swift in Sources */,
+				158845452928D8B800A9C5A0 /* NewsTableViewCell.swift in Sources */,
+				1588451829254A3000A9C5A0 /* Cadastre_ru.xcdatamodeld in Sources */,
+				1588450E29254A2F00A9C5A0 /* AppDelegate.swift in Sources */,
+				1588454329254A5E00A9C5A0 /* APIViewModel.swift in Sources */,
+				1588451029254A2F00A9C5A0 /* SceneDelegate.swift in Sources */,
+				158845472928DCA900A9C5A0 /* NewsTableView.swift in Sources */,
+				1588454129254A5300A9C5A0 /* APIModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1588451F29254A3600A9C5A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1588452829254A3600A9C5A0 /* Cadastre_ruTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1588452929254A3600A9C5A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1588453429254A3600A9C5A0 /* Cadastre_ruUITestsLaunchTests.swift in Sources */,
+				1588453229254A3600A9C5A0 /* Cadastre_ruUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1588452529254A3600A9C5A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1588450929254A2F00A9C5A0 /* Cadastre.ru */;
+			targetProxy = 1588452429254A3600A9C5A0 /* PBXContainerItemProxy */;
+		};
+		1588452F29254A3600A9C5A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1588450929254A2F00A9C5A0 /* Cadastre.ru */;
+			targetProxy = 1588452E29254A3600A9C5A0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1588451329254A3000A9C5A0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1588451429254A3000A9C5A0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1588451B29254A3500A9C5A0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1588451C29254A3500A9C5A0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1588453529254A3600A9C5A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1588453629254A3600A9C5A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1588453829254A3600A9C5A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 89GM772QRS;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Cadastre.ru/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Cadastre-ru";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1588453929254A3600A9C5A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 89GM772QRS;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Cadastre.ru/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Cadastre-ru";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1588453B29254A3600A9C5A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 89GM772QRS;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Cadastre-ruTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cadastre.ru.app/Cadastre.ru";
+			};
+			name = Debug;
+		};
+		1588453C29254A3600A9C5A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 89GM772QRS;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Cadastre-ruTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cadastre.ru.app/Cadastre.ru";
+			};
+			name = Release;
+		};
+		1588453E29254A3600A9C5A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 89GM772QRS;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Cadastre-ruUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Cadastre.ru;
+			};
+			name = Debug;
+		};
+		1588453F29254A3600A9C5A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 89GM772QRS;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Cadastre-ruUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Cadastre.ru;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1588450529254A2F00A9C5A0 /* Build configuration list for PBXProject "Cadastre.ru" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1588453529254A3600A9C5A0 /* Debug */,
+				1588453629254A3600A9C5A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1588453729254A3600A9C5A0 /* Build configuration list for PBXNativeTarget "Cadastre.ru" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1588453829254A3600A9C5A0 /* Debug */,
+				1588453929254A3600A9C5A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1588453A29254A3600A9C5A0 /* Build configuration list for PBXNativeTarget "Cadastre.ruTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1588453B29254A3600A9C5A0 /* Debug */,
+				1588453C29254A3600A9C5A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1588453D29254A3600A9C5A0 /* Build configuration list for PBXNativeTarget "Cadastre.ruUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1588453E29254A3600A9C5A0 /* Debug */,
+				1588453F29254A3600A9C5A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1588451629254A3000A9C5A0 /* Cadastre_ru.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1588451729254A3000A9C5A0 /* Cadastre_ru.xcdatamodel */,
+			);
+			currentVersion = 1588451729254A3000A9C5A0 /* Cadastre_ru.xcdatamodel */;
+			path = Cadastre_ru.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1588450229254A2F00A9C5A0 /* Project object */;
+}

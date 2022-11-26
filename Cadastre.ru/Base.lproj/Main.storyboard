@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--News View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="NewsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Tf1-hg-H1Y" customClass="NewsTableView" customModule="Cadastre_ru" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="89" width="414" height="773"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="NewsCell" rowHeight="407" id="Y1V-Wx-Yle" customClass="NewsTableViewCell" customModule="Cadastre_ru" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="407"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Y1V-Wx-Yle" id="Ie1-kW-o6V">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="407"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c9a-Zb-nF9">
+                                                    <rect key="frame" x="20" y="375" width="374" height="1"/>
+                                                    <color key="backgroundColor" red="0.86274516580000005" green="0.8627451062" blue="0.8627451062" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="F7Q-oF-VNw"/>
+                                                    </constraints>
+                                                </view>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xyb-8f-27x">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="206"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="250" id="hzL-k8-d1f"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="IuH-eA-gns">
+                                                    <rect key="frame" x="20" y="214" width="374" height="161"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Агломерации, градостроительный потенциал и единые документы территориального планирования" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LO7-WL-Cx3">
+                                                            <rect key="frame" x="0.0" y="0.0" width="374" height="76.5"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                            <color key="textColor" systemColor="linkColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Обсуждение законопроекта №02/04/10-22/00132567 «О внесении изменений в Градостроительный кодекс Российской Федерации»" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecd-ux-80F">
+                                                            <rect key="frame" x="0.0" y="84.5" width="374" height="76.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="ecd-ux-80F" firstAttribute="top" secondItem="LO7-WL-Cx3" secondAttribute="bottom" constant="8" symbolic="YES" id="uNc-C2-2lc"/>
+                                                    </constraints>
+                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17.11.22. Ответов: 0. Комментариев: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bk5-a4-2sf">
+                                                    <rect key="frame" x="20" y="384" width="205.5" height="15"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <color key="textColor" red="0.58039224150000002" green="0.58039218189999997" blue="0.58039224150000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="xyb-8f-27x" secondAttribute="trailing" constant="20" id="1py-8O-cuo"/>
+                                                <constraint firstAttribute="bottom" secondItem="bk5-a4-2sf" secondAttribute="bottom" constant="8" id="6fe-Vq-u4g"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="c9a-Zb-nF9" secondAttribute="bottom" constant="20" id="8Vp-fE-lKC"/>
+                                                <constraint firstItem="xyb-8f-27x" firstAttribute="leading" secondItem="Ie1-kW-o6V" secondAttribute="leading" constant="20" id="GJf-Jc-rdj"/>
+                                                <constraint firstAttribute="trailing" secondItem="IuH-eA-gns" secondAttribute="trailing" constant="20" id="JHc-ml-48F"/>
+                                                <constraint firstItem="c9a-Zb-nF9" firstAttribute="top" secondItem="IuH-eA-gns" secondAttribute="bottom" id="Mrw-nV-hNc"/>
+                                                <constraint firstItem="bk5-a4-2sf" firstAttribute="leading" secondItem="ecd-ux-80F" secondAttribute="leading" id="R1W-iY-BZ8"/>
+                                                <constraint firstItem="IuH-eA-gns" firstAttribute="leading" secondItem="Ie1-kW-o6V" secondAttribute="leading" constant="20" id="TBf-oe-5MS"/>
+                                                <constraint firstItem="bk5-a4-2sf" firstAttribute="top" secondItem="c9a-Zb-nF9" secondAttribute="bottom" constant="8" id="asD-R7-xkc"/>
+                                                <constraint firstItem="xyb-8f-27x" firstAttribute="top" secondItem="Ie1-kW-o6V" secondAttribute="top" id="foV-sd-ozR"/>
+                                                <constraint firstItem="c9a-Zb-nF9" firstAttribute="leading" secondItem="Ie1-kW-o6V" secondAttribute="leadingMargin" id="h3g-00-buU"/>
+                                                <constraint firstItem="IuH-eA-gns" firstAttribute="top" secondItem="xyb-8f-27x" secondAttribute="bottom" constant="8" symbolic="YES" id="jGn-wK-Oqf"/>
+                                                <constraint firstItem="c9a-Zb-nF9" firstAttribute="trailing" secondItem="Ie1-kW-o6V" secondAttribute="trailingMargin" id="tyv-qK-t89"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="newsImageView" destination="xyb-8f-27x" id="vEq-fT-P5V"/>
+                                            <outlet property="newsLabel" destination="ecd-ux-80F" id="k9x-Lg-H4d"/>
+                                            <outlet property="newsStatsLabel" destination="bk5-a4-2sf" id="zao-4E-c3y"/>
+                                            <outlet property="newsTitleLabel" destination="LO7-WL-Cx3" id="PaX-h3-8nf"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="VaE-gX-7kn"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="poq-lS-6it"/>
+                                    <outlet property="prefetchDataSource" destination="BYZ-38-t0r" id="MW6-ut-iaC"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Новости отрасли" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gno-TQ-goT">
+                                <rect key="frame" x="20" y="44" width="242.5" height="37"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Tf1-hg-H1Y" secondAttribute="trailing" id="1vl-XW-ylE"/>
+                            <constraint firstItem="Gno-TQ-goT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="B1U-Eu-lRh"/>
+                            <constraint firstItem="Tf1-hg-H1Y" firstAttribute="top" secondItem="Gno-TQ-goT" secondAttribute="bottom" constant="8" id="ISP-wO-5yc"/>
+                            <constraint firstItem="Tf1-hg-H1Y" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Tb9-Xi-Z0a"/>
+                            <constraint firstItem="Gno-TQ-goT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="VHZ-TX-yZG"/>
+                            <constraint firstItem="Tf1-hg-H1Y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gQv-Pl-zGX"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="78.348214285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
